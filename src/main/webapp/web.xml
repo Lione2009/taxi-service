@@ -8,7 +8,7 @@
     </session-config>
     <servlet>
         <servlet-name>index</servlet-name>
-        <servlet-class>mate.controller.IndexController</servlet-class>
+        <servlet-class>taxi.controller.IndexController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>index</servlet-name>
@@ -20,16 +20,16 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>allDrivers</servlet-name>
-        <servlet-class>mate.controller.driver.GetAllDriversController</servlet-class>
+        <servlet-class>taxi.controller.driver.GetAllDriversController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>allDrivers</servlet-name>
-        <url-pattern>/drivers/</url-pattern>
+        <url-pattern>/drivers</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>deleteDriver</servlet-name>
-        <servlet-class>mate.controller.driver.DeleteDriverController</servlet-class>
+        <servlet-class>taxi.controller.driver.DeleteDriverController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>deleteDriver</servlet-name>
@@ -38,7 +38,7 @@
 
     <servlet>
         <servlet-name>addDriver</servlet-name>
-        <servlet-class>mate.controller.driver.AddDriverController</servlet-class>
+        <servlet-class>taxi.controller.driver.AddDriverController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addDriver</servlet-name>
@@ -47,16 +47,16 @@
 
     <servlet>
         <servlet-name>allCars</servlet-name>
-        <servlet-class>mate.controller.car.GetAllCarsController</servlet-class>
+        <servlet-class>taxi.controller.car.GetAllCarsController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>allCars</servlet-name>
-        <url-pattern>/cars/</url-pattern>
+        <url-pattern>/cars</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>addCar</servlet-name>
-        <servlet-class>mate.controller.car.AddCarController</servlet-class>
+        <servlet-class>taxi.controller.car.AddCarController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addCar</servlet-name>
@@ -65,7 +65,7 @@
 
     <servlet>
         <servlet-name>addDriverToCar</servlet-name>
-        <servlet-class>mate.controller.car.AddDriverToCarController</servlet-class>
+        <servlet-class>taxi.controller.car.AddDriverToCarController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addDriverToCar</servlet-name>
@@ -74,7 +74,7 @@
 
     <servlet>
         <servlet-name>deleteCar</servlet-name>
-        <servlet-class>mate.controller.car.DeleteCarController</servlet-class>
+        <servlet-class>taxi.controller.car.DeleteCarController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>deleteCar</servlet-name>
@@ -83,16 +83,16 @@
 
     <servlet>
         <servlet-name>allManufacturers</servlet-name>
-        <servlet-class>mate.controller.manufacturer.GetAllManufacturersController</servlet-class>
+        <servlet-class>taxi.controller.manufacturer.GetAllManufacturersController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>allManufacturers</servlet-name>
-        <url-pattern>/manufacturers/</url-pattern>
+        <url-pattern>/manufacturers</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>addManufacturer</servlet-name>
-        <servlet-class>mate.controller.manufacturer.AddManufacturerController</servlet-class>
+        <servlet-class>taxi.controller.manufacturer.AddManufacturerController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>addManufacturer</servlet-name>
@@ -101,7 +101,7 @@
 
     <servlet>
         <servlet-name>deleteManufacturer</servlet-name>
-        <servlet-class>mate.controller.manufacturer.DeleteManufacturerController</servlet-class>
+        <servlet-class>taxi.controller.manufacturer.DeleteManufacturerController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>deleteManufacturer</servlet-name>
@@ -110,7 +110,7 @@
 
     <servlet>
         <servlet-name>loginController</servlet-name>
-        <servlet-class>mate.controller.LoginController</servlet-class>
+        <servlet-class>taxi.controller.LoginController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>loginController</servlet-name>
@@ -119,7 +119,7 @@
 
     <filter>
         <filter-name>authenticationFilter</filter-name>
-        <filter-class>mate.web.filter.AuthenticationFilter</filter-class>
+        <filter-class>taxi.web.filter.AuthenticationFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>authenticationFilter</filter-name>
